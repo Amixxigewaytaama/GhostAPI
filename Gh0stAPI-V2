@@ -6471,12 +6471,12 @@ addcmd('clraliases',{},function(args, speaker)
 	refreshaliases()
 end)
 
-addcmd('discord', {'support', 'help'}, function(args, speaker)
+addcmd('DM ME FOR', {'support', 'help'}, function(args, speaker)
 	if everyClipboard then
 		toClipboard('https://discord.com/invite/dYHag43eeU')
-		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/dYHag43eeU')
+		notify('Discord Invite', 'Copied to clipboard!\nhttps://discord.com/invite/dYHag43eeU')
 	else
-		notify('Discord Invite', 'discord.gg/dYHag43eeU')
+		notify('Discord Invite', 'https://discord.com/users/1138805732528099428')
 	end
 	if httprequest then
 		httprequest({
